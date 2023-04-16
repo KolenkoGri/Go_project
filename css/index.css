@@ -1,0 +1,251 @@
+@import url(style.css);
+
+.banner {
+    height: 835px;
+    width: 1180px;
+    position: relative;
+}
+
+.banner::after{
+    content: url("../img/image/start_picture.png");
+    position: absolute;
+    top: 73px;
+    right: 17px;
+    height: 762px ;
+    width: 675px;
+}
+.banner__title {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 150px;
+    line-height: 100%;
+    letter-spacing: -0.1em;
+}
+
+.banner__label {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 50px;
+    color: #FFFFFF;
+    padding-left: 100px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.halls-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    list-style-type: none;
+    text-align: center;
+    /* margin-top: 60px; */
+}
+
+.halls-item__link-hall {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 10em;
+    text-transform: uppercase;
+}
+
+.halls-item--bg-one {
+    background-image: url("../img/image/hall_80.png");
+}
+
+.halls-item--bg-two {
+    background-image: url("../img/image/hall_star_wars.png");
+}
+
+.halls-item--bg-three {
+    background-image: url("../img/image/hall_wild_west.png");
+}
+
+.halls-item--bg-four {
+    background-image: url("../img/image/hall_neon_style.png");
+}
+
+.label {
+    display: block;
+}
+
+.label--block {
+    display: inline;
+}
+
+.citate {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 50px;
+    color: #FFFFFF;
+    margin-top: 78px;
+    background-image: url("../img/image/seo_photo.png");
+    background-position: right 250px bottom;
+    background-repeat: no-repeat;
+    background-size: 80px 80px ;
+    padding-left: 31px;
+}
+
+.citate__slogan {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 50px;
+    /* or 114% */
+    text-transform: uppercase;
+    padding-bottom: 48px;
+}
+
+.citate__slogan::before,.citate__slogan::after {
+    content: " “ ";
+    color:#6C0287;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.citate__slogan::before {
+    content: " “ ";
+}
+
+.citate__slogan::after {
+    content: " ” ";
+}
+
+.citate__author {
+    float: right;
+}
+
+.questions-list__item {
+    background-color: #fff;
+    color: #1C1A1A;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 30px 70px;
+    margin-bottom: 20px;
+    list-style-type: none;
+}
+
+.questions-list__item:last-child {
+    margin-bottom: 0;
+}
+
+.questions-list__item:nth-child(odd) {
+    color: white;
+    background-color: #440F51;
+}
+
+.questions-list__item:nth-child(odd)::after {
+    content: "";
+    background-image: url("../img/icons/open.svg");
+    background-size: contain; 
+    width: 30px;
+    height: 30px;
+    float:right;
+    background-repeat: no-repeat;
+}
+
+.questions-list__item:nth-child(even)::after {
+    content: "";
+    background-image: url("../img/icons/open-purple.svg");
+    background-size: contain; 
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    float:right;
+}
+
+.locate:not(:last-of-type) {
+    margin-bottom: 38px;
+}
+
+.contacts-info {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.contacts-list__media {
+    background-repeat: no-repeat;
+    background-size: cover;
+    list-style-type: none;
+    margin-top: 60px;
+    height: 48px;
+    width: 48px;
+    color: wheat;
+    margin: 0;
+    display: inline-block;
+    margin-right: 28px;
+}
+
+.locate__img--bottom {
+    vertical-align: bottom;
+}
+
+.about-us{
+    display: flex;
+}
+
+.about-us__image {
+    margin-right: 80px;
+}
+
+.about-info__discription:last-child {
+    padding-bottom: 48px;
+}
+
+.contacts-list {
+    padding-top: 38px;
+}
+
+.halls-item {
+    width: 577px;
+    height: 348px;
+    display: inline-block;
+}
+
+.halls-item:nth-child(2n){
+    margin-right: 20px;
+}
+ 
+.halls-item:not(:nth-last-child(-n +2)){
+    margin-bottom: 20px;
+}
+
+.halls-item__link-hall {
+    font-size: 35px;
+} 
+
+.figure {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.figure__img {
+    min-width: 280px;
+    min-height: 280px;
+    margin-bottom: 11px;
+    margin-right: 20px;
+}
+
+.figure__figcaption {
+    padding-left: 80px;
+}
+
+.figure__text {
+    padding-top: 52px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    padding-right: 100px;
+}
