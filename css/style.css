@@ -13,6 +13,7 @@ body {
     min-width: 320px;
     min-height: 100vh;
     font-family: Arial, sans-serif;
+    font-style: normal;
     background-color: #1B1A1B;
     color:#FFFFFF;
 }
@@ -75,10 +76,9 @@ p {
 
 section,footer {
     padding-top: 50px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 header {
     padding-top: 146px;
-    padding-bottom: 50px;
 }

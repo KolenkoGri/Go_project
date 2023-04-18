@@ -2,7 +2,6 @@
 
 .banner {
     height: 835px;
-    width: 1180px;
     position: relative;
 }
 
@@ -44,7 +43,6 @@
     background-size: cover;
     list-style-type: none;
     text-align: center;
-    /* margin-top: 60px; */
 }
 
 .halls-item__link-hall {
@@ -85,7 +83,7 @@
     font-size: 44px;
     line-height: 50px;
     color: #FFFFFF;
-    margin-top: 78px;
+    padding-top: 78px;
     background-image: url("../img/image/seo_photo.png");
     background-position: right 250px bottom;
     background-repeat: no-repeat;
@@ -94,21 +92,17 @@
 }
 
 .citate__slogan {
-    font-family: 'Arial';
-    font-style: normal;
     font-weight: 400;
     font-size: 44px;
     line-height: 50px;
     /* or 114% */
     text-transform: uppercase;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
 }
 
 .citate__slogan::before,.citate__slogan::after {
     content: " “ ";
     color:#6C0287;
-    font-family: 'Arial';
-    font-style: normal;
     font-weight: 900;
     font-size: 55px;
     line-height: 50px;
@@ -172,20 +166,23 @@
 
 .contacts-info {
     display: inline-block;
-    margin-left: 30px;
+    padding-left: 30px;
 }
 
 .contacts-list__media {
     background-repeat: no-repeat;
     background-size: cover;
     list-style-type: none;
-    margin-top: 60px;
     height: 48px;
     width: 48px;
     color: wheat;
     margin: 0;
     display: inline-block;
     margin-right: 28px;
+}
+
+.contacts-list__media:last-child {
+    margin-right: 0;
 }
 
 .locate__img--bottom {
@@ -200,8 +197,8 @@
     margin-right: 80px;
 }
 
-.about-info__discription:last-child {
-    padding-bottom: 48px;
+.about-info__discription {
+    margin-bottom: 48px;
 }
 
 .contacts-list {
@@ -248,4 +245,8 @@
     font-size: 20px;
     line-height: 28px;
     padding-right: 100px;
+}
+
+.section-header {
+    padding-top: 0;
 }
