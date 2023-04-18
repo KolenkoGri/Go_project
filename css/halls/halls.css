@@ -1,0 +1,51 @@
+.halls-item {
+    width: 577px;
+    height: 348px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    list-style-type: none;
+    text-align: center;
+}
+
+.halls-item:nth-child(2n){
+    margin-right: 20px;
+}
+ 
+.halls-item:not(:nth-last-child(-n +2)){
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.halls-item__link-hall {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 10em;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.halls-item--bg-one {
+    background-image: url("image/hall_80.png");
+}
+
+.halls-item--bg-two {
+    background-image: url("image/hall_star_wars.png");
+}
+
+.halls-item--bg-three {
+    background-image: url("image/hall_wild_west.png");
+}
+
+.halls-item--bg-four {
+    background-image: url("image/hall_neon_style.png");
+}

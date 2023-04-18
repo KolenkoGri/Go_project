@@ -1,0 +1,36 @@
+header {
+    padding-top: 146px;
+}
+
+.section-header {
+    padding-top: 0;
+}
+
+.banner {
+    height: 835px;
+    position: relative;
+}
+
+.banner::after{
+    content: url("image/start_picture.png");
+    position: absolute;
+    top: 73px;
+    right: 17px;
+    height: 762px ;
+    width: 675px;
+}
+.banner__title {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 150px;
+    line-height: 100%;
+    letter-spacing: -0.1em;
+}
+
+.banner__label {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 50px;
+    color: #FFFFFF;
+    padding-left: 100px;
+}

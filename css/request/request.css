@@ -1,0 +1,23 @@
+.figure {
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.figure__img {
+    min-width: 280px;
+    min-height: 280px;
+    margin-bottom: 11px;
+    margin-right: 20px;
+}
+
+.figure__figcaption {
+    padding-left: 80px;
+}
+
+.figure__text {
+    padding-top: 52px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    padding-right: 100px;
+}

@@ -1,0 +1,32 @@
+.locate:not(:last-of-type) {
+    margin-bottom: 38px;
+}
+
+.contacts-info {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.contacts-list__media {
+    background-repeat: no-repeat;
+    background-size: cover;
+    list-style-type: none;
+    height: 48px;
+    width: 48px;
+    color: wheat;
+    margin: 0;
+    display: inline-block;
+    margin-right: 28px;
+}
+
+.contacts-list__media:last-child {
+    margin-right: 0;
+}
+
+.locate__img--bottom {
+    vertical-align: bottom;
+}
+
+.contacts-list {
+    padding-top: 38px;
+}

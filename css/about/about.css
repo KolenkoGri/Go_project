@@ -1,0 +1,55 @@
+.about-us{
+    display: flex;
+}
+
+.about-us__image {
+    margin-right: 80px;
+}
+
+.about-info__discription {
+    margin-bottom: 48px;
+}
+
+.citate {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 50px;
+    color: #FFFFFF;
+    padding-top: 78px;
+    background-image: url("image/seo_photo.png");
+    background-position: right 250px bottom;
+    background-repeat: no-repeat;
+    background-size: 80px 80px ;
+    padding-left: 31px;
+}
+
+.citate__slogan {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 50px;
+    /* or 114% */
+    text-transform: uppercase;
+    margin-bottom: 48px;
+}
+
+.citate__slogan::before,.citate__slogan::after {
+    content: " “ ";
+    color:#6C0287;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.citate__slogan::before {
+    content: " “ ";
+}
+
+.citate__slogan::after {
+    content: " ” ";
+}
+
+.citate__author {
+    float: right;
+}
