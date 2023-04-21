@@ -1,20 +1,40 @@
-.figure {
+.request__figure {
     display: flex;
     padding-bottom: 50px;
 }
 
-.figure__img {
+.request__img {
     min-width: 280px;
     min-height: 280px;
     margin-bottom: 11px;
     margin-right: 20px;
+    background:  radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
+    border-radius: 140px;
 }
 
-.figure__figcaption {
+.request__block--one {
+    background-image: url(image/Max.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.request__block--two {
+    background-image: url(image/Oksana.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.request__block--three {
+    background-image: url(image/Nikitos.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.request__figcaption {
     padding-left: 80px;
 }
 
-.figure__text {
+.request__text {
     padding-top: 52px;
     font-weight: 400;
     font-size: 20px;

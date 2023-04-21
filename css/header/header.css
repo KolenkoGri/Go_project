@@ -1,17 +1,59 @@
 header {
-    padding-top: 146px;
+    padding-top: 30px;
 }
 
-.section-header {
-    padding-top: 0;
+.header {
+    margin-bottom: 50px;
 }
 
-.banner {
+.header__navigation {
+    margin-bottom: 50px;
+}
+
+.header__list {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 40px;
+}
+
+.header__image {
+    display: block;
+}
+
+.header__item {
+    min-width: 63px;
+    min-height: 50px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.header__item-margin {
+    margin-right: 57px;
+}
+
+/* .header__item-btn {
+    flex-basis: 280px;
+} */
+
+.header__link-call {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    border: 3px solid var(--color);
+    border-radius: 10px;
+    padding: 12px 29px;
+
+}
+
+.header__title-container {
     height: 835px;
     position: relative;
 }
 
-.banner::after{
+.header__title-container::after{
     content: url("image/start_picture.png");
     position: absolute;
     top: 73px;
@@ -19,7 +61,7 @@ header {
     height: 762px ;
     width: 675px;
 }
-.banner__title {
+.header__title {
     display: inline-block;
     font-weight: 900;
     font-size: 150px;
@@ -27,10 +69,153 @@ header {
     letter-spacing: -0.1em;
 }
 
-.banner__label {
+.header__label {
     font-weight: 400;
     font-size: 28px;
     line-height: 50px;
     color: #FFFFFF;
     padding-left: 100px;
+}
+
+.header__column {
+    height: 209px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 40px;
+    margin-bottom: 150px;
+}
+
+.header__text {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    width: 193px;
+}
+
+.header__text-4 {
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 141px;
+    color: var(--color);
+}
+
+.header__text-new {
+    width: 166px;
+    height: 106px;
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 106px;
+    /* identical to box height */
+    font-variant: all-small-caps;
+    color: var(--color);
+    align-self: flex-end;
+}
+
+.header__text-newest {
+    width: 163px;
+}
+
+.header__button-btn {
+    width: 374px;
+    height: 80px;
+    padding: 25px;
+    background-color: var(--extra-color);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: transparent;
+    transition: 1s;
+}
+
+.header__button-btn2 {
+    position: absolute;
+    width: 97px;
+    height: 97px;
+    border: 1px solid #FFFFFF; 
+    background-color: transparent;
+    border-radius: 50px;
+    right: 544px;
+    z-index: 2;
+    top: 660px;
+    color: white;
+    transition: 1s;
+}
+
+.header__i {
+    position: absolute;
+    transform: rotate(135deg);
+    color: inherit;
+    top: 37px;
+    right: 51px;
+}
+
+.header__i-two {
+    position: absolute;
+    transform: rotate(45deg);
+    color: inherit;
+    top: 37px;
+    right: 41px;
+}
+
+.header__link-call {
+    transition: 0.8s;
+}
+
+.header__link-call:hover {
+    background-color: var(--extra-color);
+    border: 3px solid var(--extra-color);
+}
+
+.header__link-call:focus {
+    background-color: var(--extra-color);
+    border: 3px solid inherit;
+}
+
+.header__link-call:active {
+    background-color: #640AA3;
+    border: 3px solid black;
+}
+
+.header__button-btn:hover {
+    background-color: #840AA3;
+}
+
+.header__button-btn:focus {
+    background-color: #840AA3;
+}
+
+.header__button-btn:active {
+    background-color: #640AA3;
+}
+
+.header__button-btn2:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: var(--extra-color);
+}
+
+.header__button-btn2:focus {
+    background-color: var(--color);
+    border: 1px solid var(--color);
+    color: white;
+}
+
+.header__button-btn2:active {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    color: var(--extra-color);
+}
+
+.header__item:hover {
+    color: var(--extra-color);
+}
+
+.header__item--call:hover {
+    color: white;
 }

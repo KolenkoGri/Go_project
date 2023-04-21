@@ -1,16 +1,16 @@
-.about-us{
+.about__container {
     display: flex;
 }
 
-.about-us__image {
+.about__image {
     margin-right: 80px;
 }
 
-.about-info__discription {
+.about__discription {
     margin-bottom: 48px;
 }
 
-.citate {
+.about__citate {
     display: inline-block;
     font-weight: 400;
     font-size: 44px;
@@ -24,7 +24,7 @@
     padding-left: 31px;
 }
 
-.citate__slogan {
+.about__slogan {
     font-weight: 400;
     font-size: 44px;
     line-height: 50px;
@@ -33,23 +33,23 @@
     margin-bottom: 48px;
 }
 
-.citate__slogan::before,.citate__slogan::after {
+.about__slogan::before,.about__slogan::after {
     content: " “ ";
-    color:#6C0287;
+    color:var(--extra-color);
     font-weight: 900;
     font-size: 55px;
     line-height: 50px;
     text-transform: uppercase;
 }
 
-.citate__slogan::before {
+.about__slogan::before {
     content: " “ ";
 }
 
-.citate__slogan::after {
+.about__slogan::after {
     content: " ” ";
 }
 
-.citate__author {
+.about__author {
     float: right;
 }

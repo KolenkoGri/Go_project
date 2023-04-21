@@ -1,4 +1,7 @@
+@import url(normalize.css);
+@import url(var/var.css);
 @import url(header/header.css);
+@import url(our/our.css);
 @import url(halls/halls.css);
 @import url(booking/booking.css);
 @import url(about/about.css);
@@ -55,9 +58,14 @@ h2,
 h3,
 p,
 figure,
-fieldset,
 blockquote {
     margin: 0;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
 iframe {
@@ -85,4 +93,15 @@ p {
 section,footer {
     padding-top: 50px;
     margin-bottom: 50px;
+}
+
+.container__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 980px;
 }
