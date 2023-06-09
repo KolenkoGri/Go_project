@@ -1,43 +1,196 @@
+.request__title {
+    min-height: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
 .request__figure {
     display: flex;
-    padding-bottom: 50px;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .request__img {
-    min-width: 280px;
-    min-height: 280px;
-    margin-bottom: 11px;
-    margin-right: 20px;
+    width: 86px;
+    height: 86px;
     background:  radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
     border-radius: 140px;
+    margin: 0 auto;
 }
+
+.request__block {
+    background-repeat: no-repeat;
+    background-size: 86px 86px;
+    margin-bottom: 9px;
+    background-position: top;
+}
+
+
 
 .request__block--one {
     background-image: url(image/Max.png);
-    background-repeat: no-repeat;
-    background-size: auto;
 }
 
 .request__block--two {
     background-image: url(image/Oksana.png);
-    background-repeat: no-repeat;
-    background-size: auto;
 }
 
 .request__block--three {
     background-image: url(image/Nikitos.png);
-    background-repeat: no-repeat;
-    background-size: auto;
 }
 
 .request__figcaption {
-    padding-left: 80px;
+    min-height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
 }
 
 .request__text {
-    padding-top: 52px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    padding-right: 100px;
+    min-height: 66px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.request__figure:last-child {
+    margin-bottom: 30px;
+}
+
+
+@media (min-width:768px) {
+    .request__title {
+        min-height: 36px;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 31px;
+    }
+    
+    .request__figure {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+        column-gap: 15px;
+        padding-left: 63px;
+        padding-right: 63px;
+    }
+    
+    .request__img {
+        width: 153px;
+        height: 153px;
+        margin-bottom: 17px;
+    }
+    
+    .request__block {
+        background-size: 153px 153px;
+        margin-bottom: 0;
+    }
+
+    .request__figcaption {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .request__text {
+        min-height: 94px;
+        font-size: 16px;
+        line-height: 22px;
+        align-self: center;
+    }
+    
+    .request__figure:last-child {
+        margin-bottom: 60px;
+    }
+    
+}
+
+@media (min-width:1024px) {
+    .request__title {
+        min-height: 40px;
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 26px;
+    }
+    
+    .request__figure {
+        margin-bottom: 40px;
+        column-gap: 38px;
+        padding-left: 100px;
+        padding-right: 79px;
+    }
+    
+    .request__img {
+        width: 172px;
+        height: 172px;
+        margin-bottom: 21px;
+    }
+    
+    .request__block {
+        background-size: 172px 172px;
+    }
+
+    .request__figcaption {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .request__text {
+        min-height: 105px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    
+    .request__figure:last-child {
+        margin-bottom: 70px;
+    }    
+}
+
+@media (min-width:1440px) {
+    .request__container {
+        min-width: 1153px;
+    }
+    
+    .request__title {
+        min-height: 56px;
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+    
+    .request__figure {
+        justify-content: center;
+        margin-bottom: 50px;
+        column-gap: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .request__img {
+        width: 280px;
+        height: 280px;
+        margin-bottom: 11px;
+    }
+    
+    .request__block {
+        background-size: 280px 280px;
+    }
+
+    .request__figcaption {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .request__text {
+        min-height: 88px;
+        font-size: 20px;
+        line-height: 28px;
+        max-width: 680px;
+    }
+    
+    .request__figure:last-child {
+        margin-bottom: 100px;
+    }
 }

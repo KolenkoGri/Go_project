@@ -1,2 +1,0 @@
-#HELLLLLLOOOOOO
-# go_project

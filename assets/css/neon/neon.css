@@ -1,0 +1,18 @@
+.other__block--neon-one {
+    background-image: url(../image/header__room.png);
+    order: 1;
+}
+
+.other__block--neon-two {
+    background-image: url(../image/other-room2.png);
+    order: 3;
+}
+
+.other__block--neon-three {
+    background-image: url(../image/other-room1.png);
+    order: 2;
+}
+
+.room__neon {
+    background-image: url(../neon/image/back__neon.png);
+}

@@ -1,45 +1,52 @@
-.about__container {
-    display: flex;
-}
-
-.about__image {
-    margin-right: 80px;
+.about__title {
+    padding-top: 30px;
+    margin-bottom: 15px;
+    min-height: 18px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .about__discription {
-    margin-bottom: 48px;
+    min-height: 127px;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 15px;
+}
+
+.about__image-ceo {
+    min-width: 56px;
+    min-height: 56px;
+    margin-right: 11px;
 }
 
 .about__citate {
-    display: inline-block;
-    font-weight: 400;
-    font-size: 44px;
-    line-height: 50px;
-    color: #FFFFFF;
-    padding-top: 78px;
-    background-image: url("image/seo_photo.png");
-    background-position: right 250px bottom;
-    background-repeat: no-repeat;
-    background-size: 80px 80px ;
-    padding-left: 31px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .about__slogan {
+    min-height: 79px;
     font-weight: 400;
-    font-size: 44px;
-    line-height: 50px;
-    /* or 114% */
+    font-size: 18px;
+    line-height: 26px;
     text-transform: uppercase;
-    margin-bottom: 48px;
+    color: #FFFFFF;
+    margin-bottom: 9px;
 }
 
 .about__slogan::before,.about__slogan::after {
-    content: " “ ";
-    color:var(--extra-color);
+    content: "";
+    min-width: 11px;
+    min-height: 50px;
     font-weight: 900;
-    font-size: 55px;
+    font-size: 22px;
     line-height: 50px;
     text-transform: uppercase;
+    color: var(--extra-color);
 }
 
 .about__slogan::before {
@@ -51,5 +58,209 @@
 }
 
 .about__author {
-    float: right;
+    min-height: 48px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@media (min-width:768px) {
+    .about__title {
+        padding-top: 60px;
+        margin-bottom: 30px;
+        min-height: 36px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .about__discription {
+        max-width: 278px;
+        min-height: 247px;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 0;
+        float: right;
+        padding-top: 66px;
+    }
+
+    .about__image {
+        max-width: 382px;
+        max-height: 380px;
+        margin-right: 28px;
+        margin-bottom: 30px;
+    }
+
+    .about__slogan {
+        min-height: 79px;
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 16px;
+    }
+    
+    .about__slogan::before,.about__slogan::after {
+        min-width: 16px;
+        min-height: 36px;
+        font-size: 32px;
+        line-height: 36px;
+    }
+    
+    .about__citate {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        justify-content: flex-end;
+        margin-bottom: 60px;
+    }
+
+    .about__image-ceo {
+        min-width: 70px;
+        min-height: 70px;
+        margin-right: 25px;
+    }
+
+    .about__author {
+        min-height: 78px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media (min-width:1024px) {
+    .about__title {
+        padding-top: 70px;
+        margin-bottom: 26px;
+        min-height: 40px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .about__container {
+        display: grid;
+        grid-template-columns: 420px 444px;
+        grid-template-rows: 221px 128px 95px;
+        column-gap: 39px;
+        justify-content: center;
+    }
+    
+    .about__discription {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        min-height: 195px;
+        max-width: 444px;
+        font-size: 18px;
+        line-height: 24px;
+        padding-top: 0;
+        float: none;
+    }
+
+    .about__image {
+        grid-column: 1/2;
+        grid-row: 1/5;
+        min-width: 420px;
+        min-height: 418px;
+    }
+
+    .about__slogan {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        min-height: 115px;
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    
+    .about__slogan::before,.about__slogan::after {
+        min-width: 15px;
+    }
+    
+    .about__citate {
+        grid-column: 2/3;
+        grid-row: 3/5;
+        margin-bottom: 0;
+    }
+
+    .about__image-ceo {
+        max-width: 70px;
+        max-height: 70px;
+        margin-right: 35px;
+    }
+
+    .about__author {
+        min-height: 78px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .about {
+        margin-bottom: 70px;
+    }
+}
+
+@media (min-width:1440px) {
+    .about__title {
+        padding-top: 100px;
+        margin-bottom: 40px;
+        min-height: 56px;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .about__container {
+        display: grid;
+        grid-template-columns: 600px 500px;
+        grid-template-rows: 270px 230px 95px;
+        column-gap: 80px;
+    }
+    
+    .about__discription {
+        min-height: 222px;
+        max-width: 500px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .about__image {
+        grid-column: 1/2;
+        grid-row: 1/4;
+        min-width: 600px;
+        min-height: 596px;
+    }
+
+    .about__slogan {
+        min-height: 191px;
+        font-size: 44px;
+        line-height: 50px;
+        padding-left: 78px;
+    }
+    
+    .about__slogan::before,.about__slogan::after {
+        min-width: 22px;
+        min-height: 50px;
+    }
+    
+    .about__citate {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin-bottom: 0;
+    }
+
+    .about__image-ceo {
+        max-width: 80px;
+        max-height: 80px;
+        margin-right: 29px;
+    }
+
+    .about__author {
+        min-height: 84px;
+        font-size: 20px;
+        line-height: 28px;
+        margin-right: 10px;
+    }
+
+    .about {
+        margin-bottom: 100px;
+    }
+
+    .about__slogan::before {
+        margin-left: -30px;
+    }
 }

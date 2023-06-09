@@ -1,0 +1,18 @@
+.other__block--wildwest-one {
+    background-image: url(../image/header__room.png);
+    order: 3;
+}
+
+.other__block--wildwest-two {
+    background-image: url(../image/other-room2.png);
+    order: 1;
+}
+
+.other__block--wildwest-three {
+    background-image: url(../image/other-room3.png);
+    order: 2;
+}
+
+.room__wildwest {
+    background-image: url(../wild_west/image/head.png);
+}

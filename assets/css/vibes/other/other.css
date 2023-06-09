@@ -1,0 +1,113 @@
+.other__title {
+    min-height: 18px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.other__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-bottom: 30px;
+}
+
+.other__block {
+    min-height: 140px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 46px;
+}
+
+.other__block-one{
+    background-image: url(../../image/other-room3.png);
+}
+.other__block-two{
+    background-image: url(../../image/other-room2.png);
+}
+.other__block-three{
+    background-image: url(../../image/other-room1.png);
+}
+
+@media (min-width:768px) {
+    .other__title {
+    min-height: 36px;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+    }
+
+    .other__info {
+        flex-direction: row;
+        column-gap: 8px;
+        margin-bottom: 60px;
+        justify-content: center;
+    }
+
+    .other__block {
+        min-height: 134px;
+        min-width: 224px;
+        font-size: 20px;
+        line-height: 24px;
+        padding-top: 43px;
+    }
+
+    .other__block-one{
+        order: 3;
+    }
+    .other__block-two{
+        order: 2;
+    }
+    .other__block-three{
+        order: 1;
+    }
+}
+
+@media (min-width:1024px) {
+    .other__title {
+        min-height: 40px;
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 36px;
+    }
+
+    .other__info {
+        column-gap: 20px;
+        margin-bottom: 60px;
+    }
+
+    .other__block {
+        min-height: 172px;
+        min-width: 288px;
+        font-size: 30px;
+        line-height: 36px;
+        padding-top: 50px;
+    }
+}
+
+@media (min-width:1440px) {
+    .other__title {
+        min-height: 50px;
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+
+    .other__info {
+        margin-bottom: 100px;
+    }
+
+    .other__block {
+        min-height: 229px;
+        min-width: 380px;
+        padding-top: 78px;
+    }
+}
