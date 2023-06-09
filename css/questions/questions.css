@@ -57,6 +57,7 @@
     border: 1px solid transparent;
     padding-left: 0px;
     padding-right: 0px;
+    cursor: pointer;
 }
 
 .questions__icon {
