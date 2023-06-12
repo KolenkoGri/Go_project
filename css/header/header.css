@@ -75,10 +75,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.header__item {
-    display: none;
+    position: relative;
 }
 
 .header__item--menu {
@@ -210,12 +207,93 @@
     display: none;
 }
 
+/* .header__item {
+    min-height: 352px;
+    display: none;
+} */
+
+/* .header__item--btns {
+    height: 0;
+} */
+
 .header__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
     transition: 1s;
+}
+
+.header__list-nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    z-index: 5;
+    width: 100%;
+    padding-top: 36px;
+    padding-bottom: 38px;
+    flex-direction: column;
+    row-gap: 26px;
+    justify-content: center;
+    align-items: center;
+    background-color:#1B1A1B;
+}
+
+.header__item--btns {
+    display: flex;
+    position: absolute;
+    width: 100%;
+
+}
+
+.header__active {
+    height: auto;
+}
+
+.header__item--call {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 323px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B1A1B;
+    width: 100%;
+    padding-bottom: 27px;
+    padding-top: 3px;
+}
+
+.header__flex {
+    display: flex;
+    transition: height .4s ease-in-out;
+}
+
+.header__link-call {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: 2px solid #CD06FF;
+    border-radius: 6px;
+    padding: 11px 23px;
 }
 
 @media (min-width:768px) {
 
+    .header__link-call {
+        border: none;
+        border-radius: none;
+    }
+
+    .header__list-nav {
+        top: 27px;
+        min-height: 383px;
+    }
     .header {
         margin-bottom: 80px;
     }
@@ -229,6 +307,7 @@
     }
 
     .header__item--call {
+        position: static;
         display: block;
         min-width: 177px;
         min-height: 24px;
@@ -240,7 +319,10 @@
         border: 3px solid var(--color);
         border-radius: 8px;
         padding: 10px 26px;
-
+        /* border: none;
+        border-radius: none; */
+        position: static;
+        width: auto;
     }
 
     .header__item--menu {
@@ -368,6 +450,12 @@
     .header__list-nav {
         display: flex;
         column-gap: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
+        flex-direction: row;
+        min-height: auto;
+        background-color: transparent;
+        position: static;
     }
 
     .header__item {
@@ -541,6 +629,7 @@
         font-size: 21px;
         line-height: 30px;
         padding: 12px 32px;
+        line-height: 22px;
     }
 
     .header__title-container {
