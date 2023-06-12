@@ -3,9 +3,15 @@ const modal = document.querySelector('.modal');
 const modalSubmit = document.querySelector('.modal__submit');
 const modalForm = document.querySelector('.modal__form');
 const overlayModal = document.querySelector('.modal__overlay');
+const callBack = document.querySelector('.header__item--call');
+
 
 callbackBtn.addEventListener('click',() => {
     modal.classList.add('modal-open');
+})
+
+callBack.addEventListener('click',() => {
+  modal.classList.add('modal-open');
 })
 
 overlayModal.addEventListener('click', (e) => {
