@@ -7,6 +7,13 @@
     <link rel="icon" href="img/icon.svg" type="image/svg+xml">
     <link rel="icon" href="img/logo.png" type="image/png">
     <link rel="stylesheet" href="css/index.css">
+    <script defer src="script/modules/plugins/swiper-bundle.min.js"></script>
+    <script defer src="script/modules/plugins/just-validate.production.min (2).js"></script>
+    <script defer src="script/modules/plugins/jquery-3.7.0.min.js"></script>
+    <script defer src="script/modules/plugins/inputmask.js"></script>
+    <script defer src="script/modules/plugins/axios.min.js"></script>
+    <script defer src="script/modules/plugins/flatpickr.js"></script>
+    
     <script type="module" src="script/script.js"></script>
     <title>Project GO</title>
 </head>
@@ -49,19 +56,21 @@
                     <section class="modal">
                         <div class="modal__overlay">
                             
-                                <form class="modal__form" action="">
-                                    <h2 class="modal__title">Заказать звонок</h2>
-                                    <label class="modal__label" for="">Имя
-                                        <input class="modal__input" type="text">
-                                    </label>
-                                    <label class="modal__label" for="">Телефон
-                                        <input class="modal__input" type="text">
-                                    </label>
-                                    <button class="modal__submit">Позвонить мне</button>
-                                    <div class="modal__close">
-                                        <div class="modal__cross modal__cross-one"></div>
-                                        <div class="modal__cross modal__cross-two"></div>
-                                    </div>
+                                <form class="modal__form" action="#">
+                                    <fieldset class="modal__fieldset">
+                                        <h2 class="modal__title">Заказать звонок</h2>
+                                        <label class="modal__label" for="">Имя
+                                            <input name="name" class="modal__input modal__input-name" type="text">
+                                        </label>
+                                        <label class="modal__label" for="">Телефон
+                                            <input name = "phone" class="modal__input modal__input-phone" type="text">
+                                        </label>
+                                        <button class="modal__submit">Позвонить мне</button>
+                                        <div class="modal__close">
+                                            <div class="modal__cross modal__cross-one"></div>
+                                            <div class="modal__cross modal__cross-two"></div>
+                                        </div>
+                                    </fieldset>
                                 </form>
                                 
                             </div>
@@ -88,6 +97,25 @@
                 </div>
         </header>
         <main>
+            <section class="gallery">
+                <h2 class="gallery__title">Галерея</h2>
+                <div class="gallery__container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class ="swiper-img" src="https://loremflickr.com/600/300"/></div>
+                            <div class="swiper-slide"><img class ="swiper-img" src="https://loremflickr.com/600/300"/></div>
+                            <div class="swiper-slide"><img class ="swiper-img" src="https://loremflickr.com/600/300"/></div>
+                            <div class="swiper-slide"><img class ="swiper-img" src="https://loremflickr.com/600/300"/></div>
+                            <div class="swiper-slide"><img class ="swiper-img" src="https://loremflickr.com/600/300"/></div>
+                            <div class="swiper-slide"><img class ="swiper-img" src="https://loremflickr.com/600/300"/></div>
+                        </div>
+                        <div class="swiper-pagination"></div>         
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </section>
             <section class="our" id="our">
                 <div class="container">
                     <h2 class="our__title">У нас есть все для классного <br> отдыха с друзьями!</h2>
@@ -196,10 +224,10 @@
                             <legend class="booking__title booking__title--mb">Выбери дату и время</legend>
                             <div class="booking__info">
                                 <!-- <label class="booking__legend booking__legend--arrow" for="date">  -->
-                                    <input type="date" class="booking__day-time booking__day-time--mini" name="date" id="date" placeholder="Дата" >
+                                    <input type="text" class="booking__day-time booking__day-time--mini booking__date" name="date" id="date" placeholder="Дата" >
                                 <!-- </label> -->
                                 <!-- <label class="booking__legend  booking__legend--arrow" for="time"> -->
-                                    <input type="time" class="booking__day-time booking__day-time--mini" name="time" id="time" placeholder="Время" >
+                                    <input type="text" class="booking__day-time booking__day-time--mini booking__time" name="time" id="time" placeholder="Время" >
                                 <!-- </label> -->
                             </div>
 

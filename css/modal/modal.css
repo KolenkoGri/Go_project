@@ -97,6 +97,13 @@
     transform: matrix(0.7, -0.72, 0.7, 0.72, 0, -3);
 }
 
+.modal__fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 250px;
+}
+
 @media (min-width:768px) {
     .modal__overlay {
         padding-left: 84px;
